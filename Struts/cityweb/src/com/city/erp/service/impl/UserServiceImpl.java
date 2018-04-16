@@ -1,0 +1,24 @@
+package com.city.erp.service.impl;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.city.erp.factory.HibernateFactory;
+import com.city.erp.model.UserModel;
+import com.city.erp.service.IUserService;
+
+public class UserServiceImpl implements IUserService{
+
+	@Override
+	public void add(UserModel userModel) throws Exception {
+		// TODO Auto-generated method stub
+		SessionFactory sf = HibernateFactory.createSessionFactory();
+		Session session = sf.openSession();
+		Transaction tx = session.beginTransaction();
+		session.save(userModel);
+		tx.commit();
+		session.close();
+	}
+
+}

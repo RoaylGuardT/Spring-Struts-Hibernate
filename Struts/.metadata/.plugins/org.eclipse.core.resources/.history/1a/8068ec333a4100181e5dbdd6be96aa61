@@ -1,0 +1,20 @@
+package com.city.erp.action;
+
+import com.city.erp.model.UserModel;
+import com.opensymphony.xwork2.ActionSupport;
+
+public class CustomerProcessAction extends ActionSupport{
+	private UserModel userModel = null;
+	public UserModel getUserModel() {
+		return userModel;
+	}
+	public void setUserModel(UserModel userModel) {
+		this.userModel = userModel;
+	}
+	
+	
+	private void add() {
+		// TODO Auto-generated method stub
+		
+	}
+}

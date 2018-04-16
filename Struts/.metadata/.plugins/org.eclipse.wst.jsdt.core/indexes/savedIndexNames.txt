@@ -1,0 +1,9 @@
+INDEX VERSION 1.4+/Users/chenxi/Documents/Code/Struts/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+677004154.index
+2087532664.index
+540864291.index
+1690562873.index
+2230935531.index
+1804750312.index
+2317987205.index
+2305867301.index

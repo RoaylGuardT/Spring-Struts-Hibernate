@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <constant name="struts.enable.DynamicMethodInvocation" value="true" />
+    <constant name="struts.devMode" value="true" />
+
+    <package name="default" namespace="/" extends="struts-default">
+     <!--    <action name="/customer/main.action" class="com.city.erp.action.CustomerMainAction">
+            <result name="success" type="dispatcher">/user/main.jsp</result>
+            <result name="error" type="dispatcher">/user/add.jsp</result>
+            <result type="" ></result>
+        </action> -->
+        
+        <action name="/customer/main.action" class="com.city.erp.action.CustomerMainAction" >
+        		<result name="add">/customer/add.jsp</result>
+        </action>
+        
+        <action name="*" class="com.city.erp.action.CustomerProcessAction"" method="{1}">
+        		<result name="success"></result>
+        </action>
+    </package>
+
+
+</struts>

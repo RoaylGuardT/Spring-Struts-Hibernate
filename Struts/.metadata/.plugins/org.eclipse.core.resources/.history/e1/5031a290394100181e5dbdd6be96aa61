@@ -1,0 +1,10 @@
+package com.city.erp.action;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class CustomerProcessAction extends ActionSupport{
+	private void add() {
+		// TODO Auto-generated method stub
+
+	}
+}
